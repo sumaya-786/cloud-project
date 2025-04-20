@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title >chat-room</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=send" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<h1>Welcome to the Chat Room!</h1>
+  <div id="chat"></div>
+  <form id="messageForm">
+    <input type="text"
+     id="messageInput" 
+    placeholder="Type your message..."
+    autocomplete="off" 
+    required />
+    <button type="submit" id="sendButton"><span class="material-symbols-outlined">send</span></button>
+  </form>
+
+  <!-- Socket.io client -->
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"
+    integrity="sha384-+Lyl6H+OP4KgI2PxG9EKYzFMYdyiEbgmXMuByv8KyFbKpUVd5rT8NNMuqVZd7YdO"
+    crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
